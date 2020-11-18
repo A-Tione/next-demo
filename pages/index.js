@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+console.log('1111');
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <article dangerouslySetInnerHTML={}></article>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
