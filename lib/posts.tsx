@@ -3,7 +3,7 @@ import fs, {promises as fsPromise} from 'fs';
 import matter from 'gray-matter';
 import marked from 'marked';
 
-const markdownDir = path.join(process.cwd(), 'markdown');
+const markdownDir = path.join(process.cwd(), 'markdown');  //process.cwd() 当前工作目录
 
 export const getPosts = async () => {
   const fileNames = await fsPromise.readdir(markdownDir);
